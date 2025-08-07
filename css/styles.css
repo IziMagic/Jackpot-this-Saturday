@@ -148,13 +148,11 @@ button {
 
 @keyframes bg {
 	0% {
-		transform: rotate(0deg);
-		scale: 120%;
+		transform: rotate(0deg) scale(1.2);
 	}
 
 	100% {
-		transform: rotate(45deg);
-		scale: 200%;
+		transform: rotate(45deg) scale(2);
 	}
 }
 
