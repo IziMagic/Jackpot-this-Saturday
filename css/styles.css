@@ -158,4 +158,8 @@ button {
 
 .banner-200-200 .bg {
 	animation: bg 5s ease-in-out infinite alternate;
+	display: inline-block;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transform: translateZ(0);
 }
