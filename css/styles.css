@@ -1,0 +1,162 @@
+@font-face {
+	font-family: 'TNL';
+	src: url('/fonts/woff2/TNL-ExtraBold.woff2') format('woff2'),
+		url('/fonts/woff/TNL-ExtraBold.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TNL';
+	src: url('/fonts/woff2/TNL-Bold.woff2') format('woff2'),
+		url('/fonts/woff/TNL-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TNL';
+	src: url('/fonts/woff2/TNL-Regular.woff2') format('woff2'),
+		url('/fonts/woff/TNL-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TNL';
+	src: url('/fonts/woff2/TNL-Thin.woff2') format('woff2'),
+		url('/fonts/woff/TNL-Thin.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+p,
+h1 {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+button {
+	outline: none;
+	border: 0;
+}
+
+
+.banner-200-200 {
+	color: white;
+	font-family: 'TNL', sans-serif;
+	font-size: 10px;
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+
+	margin: 50px;
+	text-align: center;
+	position: relative;
+	animation: moveBG 30s linear infinite;
+	overflow: hidden;
+}
+
+.bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+
+
+.banner-200-200 .text {
+
+	display: inline-block;
+	transform: skewY(-5deg);
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-top: 10px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.banner-200-200 .stars {
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.banner-200-200 .heading-one {
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 0.7;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.banner-200-200 .heading-one .big {
+	font-size: 59px;
+	line-height: 1;
+	font-weight: 900;
+}
+
+.banner-200-200 .heading-one .small {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+
+.banner-200-200 .text-rules {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	font-weight: 200;
+	font-size: 8px;
+}
+
+.banner-200-200 .banner-button {
+	position: absolute;
+	left: 18px;
+	bottom: 20px;
+	width: 66px;
+	height: 37px;
+	background-color: transparent;
+	color: white;
+	background-image: url('../images/btn-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+
+.banner-200-200 .logo {
+	position: absolute;
+	right: 5px;
+	bottom: 15px;
+}
+
+@keyframes bg {
+	0% {
+		transform: rotate(0deg);
+		scale: 120%;
+	}
+
+	100% {
+		transform: rotate(45deg);
+		scale: 200%;
+	}
+}
+
+.banner-200-200 .bg {
+	animation: bg 5s ease-in-out infinite alternate;
+}
