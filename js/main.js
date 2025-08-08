@@ -25,5 +25,5 @@ setTimeout(() => {
 		span.style.animationDelay = `${i * 0.15}s`;
 		btnContainer.appendChild(span);
 	});
-}, 4000);
+}, 2400);
 
