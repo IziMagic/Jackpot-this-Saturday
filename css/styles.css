@@ -146,6 +146,11 @@ button {
 	bottom: 15px;
 }
 
+@-webkit-keyframes bg {
+    0%   { transform: rotate(0deg) scale(1.2); }
+    100% { transform: rotate(45deg) scale(2); }
+  }
+
 @keyframes bg {
 	0% {
 		transform: rotate(0deg) scale(1.2);
