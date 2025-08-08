@@ -188,7 +188,10 @@ button {
 
 }
 
-
+#animated-text,
+#animated-btn-text {
+	white-space: pre;
+}
 
 .banner-200-200 .text-rules {
 	position: absolute;
