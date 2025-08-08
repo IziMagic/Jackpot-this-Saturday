@@ -148,22 +148,19 @@ button {
 
 @-webkit-keyframes bg {
     0%   { transform: rotate(0deg) scale(1.2); }
-    100% { transform: rotate(45deg) scale(2); }
+  50%  { transform: rotate(45deg) scale(2); }
+  100% { transform: rotate(0deg) scale(1.2); }
   }
 
 @keyframes bg {
-	0% {
-		transform: rotate(0deg) scale(1.2);
-	}
-
-	100% {
-		transform: rotate(45deg) scale(2);
-	}
+	 0%   { transform: rotate(0deg) scale(1.2); }
+  50%  { transform: rotate(45deg) scale(2); }
+  100% { transform: rotate(0deg) scale(1.2); }
 }
 
 .banner-200-200 .bg {
-	-webkit-animation: bg 5s ease-in-out infinite alternate;
-  animation: bg 5s ease-in-out infinite alternate;
+	-webkit-animation: bg 10s ease-in-out infinite alternate;
+  animation: bg 10s ease-in-out infinite alternate;
 	
 	display: inline-block;
 	transform-style: preserve-3d;
